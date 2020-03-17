@@ -1,0 +1,85 @@
+.checkImg {
+	height: 30px;
+	width: 30px;
+	padding: 0 20px 0 20px;
+}
+.closeImg {
+	height: 30px;
+	width: 30px;
+}
+.thankPar {
+	color: #00b339;
+	font-size: 30px;
+}
+.close {
+	cursor: pointer;
+	padding: 12px 12px;
+}
+body {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.responseBox {
+	margin-top: 50px;
+	background-color: #e6ffee;
+	color: #4CAF50;
+	font-size: 30px;
+	width: 1300px;
+	max-height: 50px;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-between;
+}
+.thankYou {
+	display: flex;
+	align-items: center;
+}
+article {
+	margin-top: 30px;
+	max-width: 1300px;
+	display: flex;
+	justify-content: space-between;
+	border: 2px solid black;
+	padding: 30px 30px 30px 100px;
+}
+.inputBox {
+	width: 700px;
+	display: flex;
+}
+.firstName {
+	width: 500px;
+	border: 2px solid;
+	border-color: black;
+	margin: 30px 0 10px 0;
+}
+.secondName {
+	width: 500px;
+	border: 2px solid;
+	border-color: black;
+	margin: 30px 0 10px 0;
+}
+.gender {
+	margin-left: 70px;
+}
+.submitBtn {
+	align-self: flex-end;
+	justify-content: flex-end;
+	padding: 10px;
+	font-weight: bold;
+	background-color: #00cccc;
+	font-size: 20px;
+	cursor: pointer;
+}
+.subject {
+	margin-top: 30px;
+	width: 500px;
+	height: 200px;
+	border: 2px solid;
+	border-color: black;
+}
+.paris {
+	width: 500px;
+	height: 500px;
+}

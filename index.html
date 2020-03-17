@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<title>JS DOM Manipulation</title>
+</head>
+<body>
+	<div class="responseBox" id="response-box">
+		<div class="thankYou">
+			<img class="checkImg" src="check.png">
+			<p class="thankPers">Thank you for contacting us, <p id="output"></p></p>
+		</div>
+		<span class="close"><img class="closeImg" src="close.png"></span>
+	</div>
+	<article>
+		<div class="inputBox">
+			<form>
+				<input type="text" name="firstName" class="firstName" id="first_name" placeholder="First Name"><br>
+				<input type="text" name="secondName" class="secondName" id="second_name" placeholder="Second Name">
+				<p>Gender</p>
+				<div class="gender" id="gender2">
+					<input type="radio" id="male" name="gender" value="male"> M <br>
+  					<input type="radio" id="female" name="gender" value="female"> F
+				</div>
+  				<textarea class="subject" name="subject" id="subject" placeholder="Your message here..."></textarea><br> 
+  								
+			</form>
+			<input class="submitBtn" type="submit" name="submit" onclick="myFunction()"> 
+		</div>
+		<div class="pictureBox">
+			<img class="paris" src="paris.jpg">
+		</div>
+	</article>
+</body>
+<script src="script.js"></script>
+</html>
