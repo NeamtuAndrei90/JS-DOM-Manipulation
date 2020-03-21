@@ -5,25 +5,22 @@ for (let i = 0; i < closeBtn.length; i++) {
   });
 }
 const letters = /^[A-Za-z]+$/;
-const lettersNumbers = /^[0-9A-Za-z\s\-]+$/;
+const FirstName = document.getElementById('first_name');
+const SecondName = document.getElementById('second_name');
 function myFunction() {
+	if(first_name.value.match(letters)) {
+		FirstName.style.borderColor = 'black';
+	} else{
+		FirstName.style.borderColor = 'red';
+	}
+	if(second_name.value.match(letters)){
+		SecondName.style.borderColor = 'black';
+	} else{
+		SecondName.style.borderColor = 'red';
+	}
 	if(first_name.value.match(letters) && second_name.value.match(letters)) {
 		document.getElementById('response-box').style.display = 'flex';	
-		document.getElementById('output').innerHTML = document.getElementById('second_name').value;
-		document.getElementById('first_name').style.borderColor = 'black';
-		document.getElementById('second_name').style.borderColor = 'black';
-		console.log(first_name.value, second_name.value, subject.value)
-	}
-	if(first_name.value.match(lettersNumbers)) {
-		document.getElementById('first_name').style.borderColor = 'red';
-	}
-	if(second_name.value.match(lettersNumbers)) {
-		document.getElementById('second_name').style.borderColor = 'red';
-	}
-	if(first_name.value.match(letters)) {
-		document.getElementById('first_name').style.borderColor = 'black';
-	}
-	if(second_name.value.match(letters)) {
-		document.getElementById('second_name').style.borderColor = 'black';
+		document.getElementById('output').innerHTML = SecondName.value;
+		console.log(first_name.value, second_name.value, subject.value);
 	}
 }
