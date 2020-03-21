@@ -7,7 +7,14 @@ for (let i = 0; i < closeBtn.length; i++) {
 const letters = /^[A-Za-z]+$/;
 const FirstName = document.getElementById('first_name');
 const SecondName = document.getElementById('second_name');
+const radios = document.getElementsByName('gender');
 function myFunction() {
+	for (var i = 0, length = radios.length; i < length; i++) {
+  	if (radios[i].checked) {
+    	radios[i].value;
+    	break;
+  		}
+	}
 	if(first_name.value.match(letters)) {
 		FirstName.style.borderColor = 'black';
 	} else{
@@ -21,6 +28,6 @@ function myFunction() {
 	if(first_name.value.match(letters) && second_name.value.match(letters)) {
 		document.getElementById('response-box').style.display = 'flex';	
 		document.getElementById('output').innerHTML = SecondName.value;
-		console.log(first_name.value, second_name.value, subject.value);
+		console.log(first_name.value, second_name.value, radios[i].value, subject.value);
 	}
 }
