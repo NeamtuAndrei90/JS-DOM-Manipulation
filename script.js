@@ -1,7 +1,7 @@
 const closeBtn = document.getElementsByClassName('close');
 for (let i = 0; i < closeBtn.length; i++) {
   closeBtn[i].addEventListener("click", function() {
-    this.parentElement.style.display = 'none';
+    document.getElementById('response-box').style.display = 'none';
   });
 }
 const letters = /^[a-zA-Z]+$/;
